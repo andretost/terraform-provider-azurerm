@@ -1,3 +1,8 @@
+provider "azurerm" {
+  version = "~> 1.3.3"
+}
+
+
 resource "azurerm_resource_group" "akc-rg" {
     name     = "${var.resource_group_name}"
     location = "${var.resource_group_location}"
